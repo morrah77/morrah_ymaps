@@ -1,0 +1,348 @@
+<?php
+/**
+ * @file
+ * A block module that shows Yandex map with all the points having latitude and longitude fields.
+ */
+ /**
+ * Implements hook_help().
+ *
+ * Displays help and module information.
+ *
+ * @param path
+ *   Which path of the site we're using to display help
+ * @param arg
+ *   Array that holds the current path as returned from arg() function
+ */
+function morrah_ymaps_help($path, $arg) {
+  switch ($path) {
+    case "admin/help#morrah_ymaps":
+      return '<p>' . t("Shows Yandex map") . '</p>';
+      break;
+  }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function morrah_ymaps_block_info() {
+  $blocks['morrah_ymaps'] = array(
+    // The name that will appear in the block list.
+    'info' => t('Yandex map'),
+    // Default setting.
+    'cache' => DRUPAL_NO_CACHE
+  );
+  return $blocks;
+}
+/**
+ * Implements hook_preprocess_html().
+ */
+function morrah_ymaps_preprocess_html(&$variables) {
+
+}
+/**
+ * Implements hook_block_view().
+ *
+ * Prepares the contents of the block.
+ */
+function morrah_ymaps_block_view($delta = '') {
+	global $language;
+	switch ($delta) {
+		case 'morrah_ymaps':
+	drupal_add_js('http://api-maps.yandex.ru/2.1/?lang=ru_RU', 'external');
+	drupal_add_css(drupal_get_path('module', 'morrah_ymaps').'/morrah_ymaps.css');		
+			$block['subject'] = t('morrah_ymaps');
+		
+			if (user_access('access content')) {
+				$block['content'] = '<div class="block-morrah_ymaps"><div id="map"></div>';
+				$type=variable_get('morrah_ymaps_type', 'ad');
+				$class=variable_get('morrah_ymaps_table_class', '');
+				
+				$node  = menu_get_object();
+				$morrah_lng=entity_language('node', $node);
+				if(((!empty($node->field_latitude[LANGUAGE_NONE][0]['value']))||(!empty($node->field_latitude[$morrah_lng][0]['value'])))&&((!empty($node->field_longitude[LANGUAGE_NONE][0]['value']))||(!empty($node->field_longitude[$morrah_lng][0]['value'])))){
+					$nodes = array('0'=>$node);
+				}
+				else{
+					$nodes = node_load_multiple(array(), array('type' => $type, 'status' => '1', 'language' => $language->language));
+				
+					if($nodes){
+						$block['content'] = $block['content'].'<table'.($class?(' class="'.$class.'"'):'').'>
+						';
+						foreach($nodes as $k=>$v){
+							$morrah_lng=entity_language('node', $v);
+							
+							$block['content'] = $block['content'].'
+							<tr>
+							<td><a href="/'.drupal_get_path_alias('node/'.$v->nid,$language->language).'" target="_blank" title="'.$v->title.'">'.$v->title.'</a>'.'</td>
+							<td><a href="/'.drupal_get_path_alias('node/'.$v->nid,$language->language).'" target="_blank" title="'.$v->title.'">'.(!empty($v->field_image[LANGUAGE_NONE][0]['uri'])?'<img src="'.image_style_url("thumbnail", $v->field_image[LANGUAGE_NONE][0]['uri']).'"/>':'...').'</a></td>
+							<td>'.$v->field_address[LANGUAGE_NONE][0]['value'].'</td>'/*.'
+							<td>'.(isset($v->field_price[LANGUAGE_NONE][0]['value'])?$v->field_price[LANGUAGE_NONE][0]['value']:'').'<div style="display:none;">';
+							ob_start();
+							var_dump($v);
+							$morrah_dump=ob_get_contents();
+							ob_end_clean();
+							$block['content'] = $block['content'].$morrah_dump;
+							$block['content'] = $block['content'].'</div>'.'</td>'*/.'
+							</tr>';
+						}
+						$block['content'] = $block['content'].'</table>';
+					}
+				}
+				$js_nodes='
+				ymaps.ready(init);
+				function init () {
+					var ymsettings={
+						mapsettings:{//параметры карты
+							center: [55.76, 37.64],
+							zoom: 10,
+							type: "yandex#map",
+							behaviors: ["scrollZoom","drag","rightMouseButtonMagnifier"],
+							controls: ["geolocationControl", "zoomControl", "typeSelector"]
+						},
+						placemarksettings:{//параметры метки
+							draggable: false,//Не изменяйте это свойство!
+							preset: "islands#whiteStretchyIcon"
+						},
+						debug:false
+					},
+					myMap, myPlacemark, myGeoObjects, myClusterer;
+					myMap = new ymaps.Map("map", ymsettings.mapsettings);
+					var myGeoObjects = [];
+					function setPlacemark(obj){
+						var coords=[obj.lat,obj.lon];
+						if(ymsettings.debug){
+						console.dir(obj);
+						}
+						myPlacemark = new  ymaps.Placemark(
+							coords,
+							{
+								hintContent:obj.title,
+								balloonContentBody:\'<a href="/\'+obj.href+\'" target="_blank"><img src="\'+obj.img+\'" />\'+obj.title+\'</a><br />\'+obj.address+\'<br/>\'+obj.price+\'\',
+							},
+							ymsettings.placemarksettings
+						);
+						
+						myMap.geoObjects.add(myPlacemark);
+					}
+				';
+				$js_nodes = $js_nodes.'
+				var objs=[];';
+				foreach($nodes as $k=>$v){
+				  if(((!empty($v->field_latitude[LANGUAGE_NONE][0]['value']))||(!empty($v->field_latitude[$morrah_lng][0]['value'])))&&((!empty($v->field_longitude[LANGUAGE_NONE][0]['value']))||(!empty($v->field_longitude[$morrah_lng][0]['value'])))){
+					$js_nodes = $js_nodes.'
+					
+					objs['.$k.']={
+					title:"'.$v->title.'",
+					lat:'.(!empty($v->field_latitude[LANGUAGE_NONE][0]['value'])?$v->field_latitude[LANGUAGE_NONE][0]['value']:$v->field_latitude[$morrah_lng][0]['value']).',
+					lon:'.(!empty($v->field_longitude[LANGUAGE_NONE][0]['value'])?$v->field_longitude[LANGUAGE_NONE][0]['value']:$v->field_longitude[$morrah_lng][0]['value']).',
+					img:"'.image_style_url("thumbnail", !empty($v->field_image[LANGUAGE_NONE][0]['uri'])?$v->field_image[LANGUAGE_NONE][0]['uri']:'').'",
+					address:"'.$v->field_address[LANGUAGE_NONE][0]['value'].'",
+					price:"'.(isset($v->field_price[LANGUAGE_NONE][0]['value'])?$v->field_price[LANGUAGE_NONE][0]['value']:'').'",
+					href:"'.drupal_get_path_alias('node/'.$v->nid,$language->language).'"
+					};';
+				  }
+				}//$v->field_image[LANGUAGE_NONE][0]['uri']
+				$js_nodes = $js_nodes.'
+				for(var obj in objs){
+				setPlacemark(objs[obj]);
+				}
+				myMap.setBounds(myMap.geoObjects.getBounds());'.(count($nodes)==1?'myMap.setZoom(14)':'myMap.setZoom(myMap.getZoom()-1)').';';
+				/*
+				foreach($nodes as $k=>$v){
+					$js_nodes = $js_nodes.'
+					myGeoObjects['.$k.'] = new ymaps.GeoObject({
+						geometry: {
+						type: "Point",
+						coordinates: ['.$v->field_latitude[LANGUAGE_NONE][0]['value'].','.$v->field_longitude[LANGUAGE_NONE][0]['value'].']
+						},
+						properties: {
+							clusterCaption: "('.$k.') '.$v->title.'",
+							balloonContentBody: \'<a href="/node/'.$k.'" target="_blank">'.$v->title.'</a>\'
+						}
+					});';
+				}
+				$js_nodes = $js_nodes.'
+				var myClusterer = new ymaps.Clusterer(
+					{clusterDisableClickZoom: true}
+				);
+				myClusterer.add(myGeoObjects);
+				myMap.geoObjects.add(myClusterer);
+				myMap.setBounds(myClusterer.getBounds());
+				myMap.setZoom(myMap.getZoom()-1);';*/
+				$js_nodes = $js_nodes.'
+				}
+				';
+				$block['content'] = $block['content'].'</div>';
+				drupal_add_js($js_nodes,
+    array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
+				return $block;
+			}
+	}
+}
+/**
+ * Implements hook_menu().
+ */
+function morrah_ymaps_menu() {
+  $items = array();
+  $items['admin/config/content/morrah_ymaps'] = array(
+    'title' => 'morrah_ymaps',
+    'description' => 'Configuration for Morrah ymaps module',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('morrah_ymaps_form'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+/**
+ * Page callback: morrah_ymaps settings
+ *
+ * @see current_posts_menu()
+ */
+function morrah_ymaps_form($form, &$form_state) {
+/*
+	$form['morrah_ymaps_ymaps']['items'] = array(
+		'#type' => 'checkboxes',
+		'#options' => drupal_map_assoc(array('USD', 'EUR')),
+		'#title' => t('Choose ymaps You need'),
+	);
+	Вытащить в настройки: машинные имена полей широты и долготы
+*/
+	$form['morrah_ymaps_type'] = array(
+		'#type' => 'textfield',
+		'#title' => t('machine name of type to show on the map'),
+		'#default_value' => variable_get('morrah_ymaps_type', ''),
+		'#size' => 60, 
+		'#maxlength' => 128, 
+		'#required' => TRUE,
+		'#description' => t('type.'),
+	);
+	
+	$form['morrah_ymaps_table_class'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Table class'),
+		'#default_value' => variable_get('morrah_ymaps_table_class', ''),
+		'#size' => 60, 
+		'#maxlength' => 128, 
+		'#required' => TRUE,
+		'#description' => t('other'),
+	);
+	return system_settings_form($form);
+}
+/**
+ * Implements validation from the Form API.
+ *
+ * @param $form
+ *   A structured array containing the elements and properties of the form.
+ * @param $form_state
+ *   An array that stores information about the form's current state
+ *   during processing.
+ */
+function morrah_ymaps_form_validate($form, &$form_state){
+	$cont['type'] = $form_state['values']['morrah_ymaps_type'];
+	$cont['other'] = $form_state['values']['morrah_ymaps_table_class'];
+  /*if (!is_numeric($cont)){
+    form_set_error('morrah_ymaps_content', t('You must enter a number for the maximum number of posts to display.'));
+  }
+  else if ($cont <= 0){
+    form_set_error('morrah_ymaps_content', t('Maximum number of posts to display must be positive.'));
+  }*/
+}
+function morrah_ymaps_form_submit($form, &$form_state) {
+	watchdog('morrah_ymaps', sprintf('morrah_ymaps_form_submit: %s', $form_state['values']['morrah_ymaps_type']));
+	drupal_set_message('Ymaps form submit','status',true);
+}
+/*function morrah_ymaps_css_alter(&$css){
+	drupal_add_css(drupal_get_path('module', 'morrah_ymaps').'/morrah_ymaps.css');
+}*/
+/**
+ * Implements hook hook_form_alter().
+ */
+function morrah_ymaps_form_alter(&$form, &$form_state, $form_id) {
+	$adtype=variable_get('morrah_ymaps_type', 'ad');
+	if($form_id==$adtype.'_node_form' && (isset($form['#node_edit_form'])) && $form['#node_edit_form'] === TRUE){
+	if(!empty($form['field_latitude'][$form['field_latitude']['#language']][0]['value']['#default_value'])){
+		$latitude=$form['field_latitude'][$form['field_latitude']['#language']][0]['value']['#default_value'];
+	}
+	if(!empty($form['field_longitude'][$form['field_longitude']['#language']][0]['value']['#default_value'])){
+		$longitude=$form['field_longitude'][$form['field_longitude']['#language']][0]['value']['#default_value'];
+	}
+	if((isset($form['field_latitude']['#weight']))&&(isset($form['field_longitude']['#weight']))){
+		$weight=$form['field_latitude']['#weight']>$form['field_longitude']['#weight']?$form['field_latitude']['#weight']:$form['field_longitude']['#weight'];
+	}
+	else{
+		$weight=99;
+	}
+	drupal_add_js('http://api-maps.yandex.ru/2.1/?lang=ru_RU', 'external');
+	drupal_add_css(drupal_get_path('module', 'morrah_ymaps').'/morrah_ymaps.css');
+	$js_nodes='
+				ymaps.ready(init);
+				function init () {
+					var ymsettings={
+						mapsettings:{//параметры карты
+							center: [55.76, 37.64],
+							zoom: 14,
+							type: "yandex#map",
+							behaviors: ["scrollZoom","drag","rightMouseButtonMagnifier"],
+							controls: ["geolocationControl", "zoomControl", "typeSelector"]
+						},
+						placemarksettings:{//параметры метки
+							draggable: true,
+							preset: "islands#whiteStretchyIcon"
+						},
+						debug:false
+					},
+					myMap, myPlacemark, myGeoObjects, myClusterer;
+					myMap = new ymaps.Map("map", ymsettings.mapsettings);
+					var myGeoObjects = [];
+					function setPlacemark(coords){
+						myPlacemark = new  ymaps.Placemark(
+							coords,
+							{
+								hintContent:coords
+							},
+							ymsettings.placemarksettings
+						);
+						myMap.geoObjects.removeAll();
+						myMap.geoObjects.add(myPlacemark);
+						setFormCoords(coords);
+						myPlacemark.events.add(\'dragend\', function(e) {
+						   var coords = e.get(\'target\').geometry.getCoordinates();
+						   myPlacemark.properties.set(\'hintContent\', coords);
+						   setFormCoords(coords);
+						});
+					}
+					myMap.events.add(\'click\', function (e) {
+						var myCoords = e.get(\'coords\');
+						if(ymsettings.debug){
+							console.log(\'coords:\');
+							console.dir(myCoords);
+						}
+						setPlacemark(myCoords);
+						myMap.setCenter(myCoords);
+					});
+					';
+					if((!empty($latitude))&&(!empty($longitude))){
+						$js_nodes=$js_nodes.'
+					var coords=['.$latitude.','.$longitude.'];
+					setPlacemark(coords);
+					myMap.setCenter(coords);
+					';
+					}
+					$js_nodes=$js_nodes.'
+				}
+				function setFormCoords(coords){
+					document.getElementById(\'edit-field-latitude-'.$form['field_latitude']['#language'].'-0-value\').value=parseFloat(coords[0].toFixed(6));
+					document.getElementById(\'edit-field-longitude-'.$form['field_longitude']['#language'].'-0-value\').value=parseFloat(coords[1].toFixed(6));
+				}
+				';
+	drupal_add_js($js_nodes,
+    array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
+	$form['morrah_ymaps_map'] = array(
+     '#type' => 'markup',
+     '#markup' => '<h3>'.t("Point Your object on the map").'</h3>'.'<div id="map" style="width:100%; height:350px; border:1px #ccc solid;"></div>',
+	  '#weight'  => !empty($weight)?$weight+1:-1,
+     '#access' => user_access('access content') ? TRUE : FALSE,
+    );
+  }
+}

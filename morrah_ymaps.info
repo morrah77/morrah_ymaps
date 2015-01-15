@@ -1,0 +1,5 @@
+name = morrah_ymaps
+description = A block module that shows Yandex map with all the points having latitude and longitude fields.
+core = 7.x
+; NEW LINE
+configure = admin/config/content/morrah_ymaps

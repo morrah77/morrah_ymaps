@@ -1,0 +1,1835 @@
+object(stdClass)#121 (40) {
+  ["vid"]=>
+  string(1) "3"
+  ["uid"]=>
+  string(1) "1"
+  ["title"]=>
+  string(35) "Гостевой дом в Сочи"
+  ["log"]=>
+  string(0) ""
+  ["status"]=>
+  string(1) "1"
+  ["comment"]=>
+  string(1) "1"
+  ["promote"]=>
+  string(1) "0"
+  ["sticky"]=>
+  string(1) "0"
+  ["nid"]=>
+  string(1) "3"
+  ["type"]=>
+  string(2) "ad"
+  ["language"]=>
+  string(2) "ru"
+  ["created"]=>
+  string(10) "1417619815"
+  ["changed"]=>
+  string(10) "1417754103"
+  ["tnid"]=>
+  string(1) "0"
+  ["translate"]=>
+  string(1) "0"
+  ["revision_timestamp"]=>
+  string(10) "1417754103"
+  ["revision_uid"]=>
+  string(1) "1"
+  ["body"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(5) {
+        ["value"]=>
+        string(505) "<p>Гостевой дом в Сочи&nbsp;Гостевой дом в Сочи&nbsp;Гостевой дом в Сочи</p>
+
+<p>Гостевой дом в Сочи&nbsp;Гостевой дом в Сочи&nbsp;Гостевой дом в Сочи&nbsp;Гостевой дом в Сочи&nbsp;Гостевой дом в Сочи</p>
+
+<p>Гостевой дом в Сочи&nbsp;Гостевой дом в Сочи&nbsp;Гостевой дом в Сочи&nbsp;Гостевой дом в Сочи</p>
+"
+        ["summary"]=>
+        string(0) ""
+        ["format"]=>
+        string(13) "filtered_html"
+        ["safe_value"]=>
+        string(462) "<p>Гостевой дом в Сочи Гостевой дом в Сочи Гостевой дом в Сочи</p>
+<p>Гостевой дом в Сочи Гостевой дом в Сочи Гостевой дом в Сочи Гостевой дом в Сочи Гостевой дом в Сочи</p>
+<p>Гостевой дом в Сочи Гостевой дом в Сочи Гостевой дом в Сочи Гостевой дом в Сочи</p>
+"
+        ["safe_summary"]=>
+        string(0) ""
+      }
+    }
+  }
+  ["field_image"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(13) {
+        ["fid"]=>
+        string(1) "1"
+        ["uid"]=>
+        string(1) "1"
+        ["filename"]=>
+        string(18) "canon_eos_5d_1.jpg"
+        ["uri"]=>
+        string(27) "public://canon_eos_5d_1.jpg"
+        ["filemime"]=>
+        string(10) "image/jpeg"
+        ["filesize"]=>
+        string(5) "79104"
+        ["status"]=>
+        string(1) "1"
+        ["timestamp"]=>
+        string(10) "1417619815"
+        ["rdf_mapping"]=>
+        array(0) {
+        }
+        ["alt"]=>
+        string(0) ""
+        ["title"]=>
+        string(0) ""
+        ["width"]=>
+        string(3) "800"
+        ["height"]=>
+        string(3) "591"
+      }
+    }
+  }
+  ["field_place"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(1) "9"
+      }
+    }
+  }
+  ["field_lodging"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "12"
+      }
+    }
+  }
+  ["field_accommodation"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "18"
+      }
+    }
+  }
+  ["field_meals"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "14"
+      }
+    }
+  }
+  ["field_swimming"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(1) "1"
+      }
+    }
+  }
+  ["field_parking"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(1) "1"
+      }
+    }
+  }
+  ["field_address"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(3) {
+        ["value"]=>
+        string(20) "Ульянова, 33"
+        ["format"]=>
+        NULL
+        ["safe_value"]=>
+        string(20) "Ульянова, 33"
+      }
+    }
+  }
+  ["field_phone"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(3) {
+        ["value"]=>
+        string(18) "+7 (123) 456-78-90"
+        ["format"]=>
+        NULL
+        ["safe_value"]=>
+        string(18) "+7 (123) 456-78-90"
+      }
+    }
+  }
+  ["field_distanse_sea"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(4) "1000"
+      }
+    }
+  }
+  ["field_price"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(7) "3600.00"
+      }
+    }
+  }
+  ["field_latitude"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(9) "43.427300"
+      }
+    }
+  }
+  ["field_longitude"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(9) "39.920800"
+      }
+    }
+  }
+  ["rdf_mapping"]=>
+  array(9) {
+    ["rdftype"]=>
+    array(2) {
+      [0]=>
+      string(9) "sioc:Item"
+      [1]=>
+      string(13) "foaf:Document"
+    }
+    ["title"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(8) "dc:title"
+      }
+    }
+    ["created"]=>
+    array(3) {
+      ["predicates"]=>
+      array(2) {
+        [0]=>
+        string(7) "dc:date"
+        [1]=>
+        string(10) "dc:created"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+    ["changed"]=>
+    array(3) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(11) "dc:modified"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+    ["body"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(15) "content:encoded"
+      }
+    }
+    ["uid"]=>
+    array(2) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(16) "sioc:has_creator"
+      }
+      ["type"]=>
+      string(3) "rel"
+    }
+    ["name"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(9) "foaf:name"
+      }
+    }
+    ["comment_count"]=>
+    array(2) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(16) "sioc:num_replies"
+      }
+      ["datatype"]=>
+      string(11) "xsd:integer"
+    }
+    ["last_activity"]=>
+    array(3) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(23) "sioc:last_activity_date"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+  }
+  ["cid"]=>
+  string(1) "0"
+  ["last_comment_timestamp"]=>
+  string(10) "1417619815"
+  ["last_comment_name"]=>
+  NULL
+  ["last_comment_uid"]=>
+  string(1) "1"
+  ["comment_count"]=>
+  string(1) "0"
+  ["name"]=>
+  string(5) "admin"
+  ["picture"]=>
+  string(1) "0"
+  ["data"]=>
+  string(207) "a:7:{s:16:"ckeditor_default";s:1:"t";s:20:"ckeditor_show_toggle";s:1:"t";s:14:"ckeditor_width";s:4:"100%";s:13:"ckeditor_lang";s:2:"en";s:18:"ckeditor_auto_lang";s:1:"t";s:7:"contact";i:0;s:7:"overlay";i:1;}"
+}
+ 3:{title:Гостевой дом в Сочи,lat:Array,lon:Array}, object(stdClass)#123 (40) {
+  ["vid"]=>
+  string(1) "4"
+  ["uid"]=>
+  string(1) "1"
+  ["title"]=>
+  string(30) "Гостиница в Сочи"
+  ["log"]=>
+  string(0) ""
+  ["status"]=>
+  string(1) "1"
+  ["comment"]=>
+  string(1) "1"
+  ["promote"]=>
+  string(1) "0"
+  ["sticky"]=>
+  string(1) "0"
+  ["nid"]=>
+  string(1) "4"
+  ["type"]=>
+  string(2) "ad"
+  ["language"]=>
+  string(2) "ru"
+  ["created"]=>
+  string(10) "1417619932"
+  ["changed"]=>
+  string(10) "1417753989"
+  ["tnid"]=>
+  string(1) "0"
+  ["translate"]=>
+  string(1) "0"
+  ["revision_timestamp"]=>
+  string(10) "1417753989"
+  ["revision_uid"]=>
+  string(1) "1"
+  ["body"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(5) {
+        ["value"]=>
+        string(363) "<p>Гостиница в Сочи&nbsp;Гостиница в Сочи&nbsp;Гостиница в Сочи&nbsp;Гостиница в Сочи&nbsp;Гостиница в Сочи&nbsp;Гостиница в Сочи&nbsp;Гостиница в Сочи&nbsp;Гостиница в Сочи&nbsp;Гостиница в Сочи&nbsp;Гостиница в Сочи</p>
+"
+        ["summary"]=>
+        string(0) ""
+        ["format"]=>
+        string(13) "filtered_html"
+        ["safe_value"]=>
+        string(326) "<p>Гостиница в Сочи Гостиница в Сочи Гостиница в Сочи Гостиница в Сочи Гостиница в Сочи Гостиница в Сочи Гостиница в Сочи Гостиница в Сочи Гостиница в Сочи Гостиница в Сочи</p>
+"
+        ["safe_summary"]=>
+        string(0) ""
+      }
+    }
+  }
+  ["field_image"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(13) {
+        ["fid"]=>
+        string(1) "2"
+        ["uid"]=>
+        string(1) "1"
+        ["filename"]=>
+        string(18) "canon_eos_5d_2.jpg"
+        ["uri"]=>
+        string(27) "public://canon_eos_5d_2.jpg"
+        ["filemime"]=>
+        string(10) "image/jpeg"
+        ["filesize"]=>
+        string(5) "54155"
+        ["status"]=>
+        string(1) "1"
+        ["timestamp"]=>
+        string(10) "1417619932"
+        ["rdf_mapping"]=>
+        array(0) {
+        }
+        ["alt"]=>
+        string(0) ""
+        ["title"]=>
+        string(0) ""
+        ["width"]=>
+        string(3) "550"
+        ["height"]=>
+        string(3) "505"
+      }
+    }
+  }
+  ["field_place"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(1) "9"
+      }
+    }
+  }
+  ["field_lodging"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "11"
+      }
+    }
+  }
+  ["field_accommodation"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "19"
+      }
+    }
+  }
+  ["field_meals"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "16"
+      }
+    }
+  }
+  ["field_swimming"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(1) "1"
+      }
+    }
+  }
+  ["field_parking"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(1) "1"
+      }
+    }
+  }
+  ["field_address"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(3) {
+        ["value"]=>
+        string(16) "Ленина, 17"
+        ["format"]=>
+        NULL
+        ["safe_value"]=>
+        string(16) "Ленина, 17"
+      }
+    }
+  }
+  ["field_phone"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(3) {
+        ["value"]=>
+        string(18) "+7 (123) 456-78-91"
+        ["format"]=>
+        NULL
+        ["safe_value"]=>
+        string(18) "+7 (123) 456-78-91"
+      }
+    }
+  }
+  ["field_distanse_sea"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(3) "200"
+      }
+    }
+  }
+  ["field_price"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(7) "4800.00"
+      }
+    }
+  }
+  ["field_latitude"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(9) "43.426300"
+      }
+    }
+  }
+  ["field_longitude"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(9) "39.923200"
+      }
+    }
+  }
+  ["rdf_mapping"]=>
+  array(9) {
+    ["rdftype"]=>
+    array(2) {
+      [0]=>
+      string(9) "sioc:Item"
+      [1]=>
+      string(13) "foaf:Document"
+    }
+    ["title"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(8) "dc:title"
+      }
+    }
+    ["created"]=>
+    array(3) {
+      ["predicates"]=>
+      array(2) {
+        [0]=>
+        string(7) "dc:date"
+        [1]=>
+        string(10) "dc:created"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+    ["changed"]=>
+    array(3) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(11) "dc:modified"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+    ["body"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(15) "content:encoded"
+      }
+    }
+    ["uid"]=>
+    array(2) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(16) "sioc:has_creator"
+      }
+      ["type"]=>
+      string(3) "rel"
+    }
+    ["name"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(9) "foaf:name"
+      }
+    }
+    ["comment_count"]=>
+    array(2) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(16) "sioc:num_replies"
+      }
+      ["datatype"]=>
+      string(11) "xsd:integer"
+    }
+    ["last_activity"]=>
+    array(3) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(23) "sioc:last_activity_date"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+  }
+  ["cid"]=>
+  string(1) "0"
+  ["last_comment_timestamp"]=>
+  string(10) "1417619932"
+  ["last_comment_name"]=>
+  NULL
+  ["last_comment_uid"]=>
+  string(1) "1"
+  ["comment_count"]=>
+  string(1) "0"
+  ["name"]=>
+  string(5) "admin"
+  ["picture"]=>
+  string(1) "0"
+  ["data"]=>
+  string(207) "a:7:{s:16:"ckeditor_default";s:1:"t";s:20:"ckeditor_show_toggle";s:1:"t";s:14:"ckeditor_width";s:4:"100%";s:13:"ckeditor_lang";s:2:"en";s:18:"ckeditor_auto_lang";s:1:"t";s:7:"contact";i:0;s:7:"overlay";i:1;}"
+}
+ 4:{title:Гостиница в Сочи,lat:Array,lon:Array}, object(stdClass)#124 (40) {
+  ["vid"]=>
+  string(1) "5"
+  ["uid"]=>
+  string(1) "1"
+  ["title"]=>
+  string(26) "Турбаза в Сочи"
+  ["log"]=>
+  string(0) ""
+  ["status"]=>
+  string(1) "1"
+  ["comment"]=>
+  string(1) "1"
+  ["promote"]=>
+  string(1) "0"
+  ["sticky"]=>
+  string(1) "0"
+  ["nid"]=>
+  string(1) "5"
+  ["type"]=>
+  string(2) "ad"
+  ["language"]=>
+  string(2) "ru"
+  ["created"]=>
+  string(10) "1417620054"
+  ["changed"]=>
+  string(10) "1417753806"
+  ["tnid"]=>
+  string(1) "0"
+  ["translate"]=>
+  string(1) "0"
+  ["revision_timestamp"]=>
+  string(10) "1417753806"
+  ["revision_uid"]=>
+  string(1) "1"
+  ["body"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(5) {
+        ["value"]=>
+        string(488) "<p>Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи</p>
+
+<p>Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи&nbsp;Турбаза в Сочи</p>
+"
+        ["summary"]=>
+        string(0) ""
+        ["format"]=>
+        string(13) "filtered_html"
+        ["safe_value"]=>
+        string(432) "<p>Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи</p>
+<p>Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи Турбаза в Сочи</p>
+"
+        ["safe_summary"]=>
+        string(0) ""
+      }
+    }
+  }
+  ["field_image"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(13) {
+        ["fid"]=>
+        string(1) "3"
+        ["uid"]=>
+        string(1) "1"
+        ["filename"]=>
+        string(18) "canon_eos_5d_3.jpg"
+        ["uri"]=>
+        string(27) "public://canon_eos_5d_3.jpg"
+        ["filemime"]=>
+        string(10) "image/jpeg"
+        ["filesize"]=>
+        string(5) "41447"
+        ["status"]=>
+        string(1) "1"
+        ["timestamp"]=>
+        string(10) "1417620054"
+        ["rdf_mapping"]=>
+        array(0) {
+        }
+        ["alt"]=>
+        string(0) ""
+        ["title"]=>
+        string(0) ""
+        ["width"]=>
+        string(3) "540"
+        ["height"]=>
+        string(3) "405"
+      }
+    }
+  }
+  ["field_place"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(1) "9"
+      }
+    }
+  }
+  ["field_lodging"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "13"
+      }
+    }
+  }
+  ["field_accommodation"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "18"
+      }
+    }
+  }
+  ["field_meals"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "14"
+      }
+    }
+  }
+  ["field_swimming"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(1) "1"
+      }
+    }
+  }
+  ["field_parking"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(1) "1"
+      }
+    }
+  }
+  ["field_address"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(3) {
+        ["value"]=>
+        string(27) "Дзержинского, 9"
+        ["format"]=>
+        NULL
+        ["safe_value"]=>
+        string(27) "Дзержинского, 9"
+      }
+    }
+  }
+  ["field_phone"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(3) {
+        ["value"]=>
+        string(18) "+7 (123) 456-78-92"
+        ["format"]=>
+        NULL
+        ["safe_value"]=>
+        string(18) "+7 (123) 456-78-92"
+      }
+    }
+  }
+  ["field_distanse_sea"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(2) "20"
+      }
+    }
+  }
+  ["field_price"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(7) "3600.00"
+      }
+    }
+  }
+  ["field_latitude"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(9) "43.459000"
+      }
+    }
+  }
+  ["field_longitude"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(9) "39.900200"
+      }
+    }
+  }
+  ["rdf_mapping"]=>
+  array(9) {
+    ["rdftype"]=>
+    array(2) {
+      [0]=>
+      string(9) "sioc:Item"
+      [1]=>
+      string(13) "foaf:Document"
+    }
+    ["title"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(8) "dc:title"
+      }
+    }
+    ["created"]=>
+    array(3) {
+      ["predicates"]=>
+      array(2) {
+        [0]=>
+        string(7) "dc:date"
+        [1]=>
+        string(10) "dc:created"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+    ["changed"]=>
+    array(3) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(11) "dc:modified"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+    ["body"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(15) "content:encoded"
+      }
+    }
+    ["uid"]=>
+    array(2) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(16) "sioc:has_creator"
+      }
+      ["type"]=>
+      string(3) "rel"
+    }
+    ["name"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(9) "foaf:name"
+      }
+    }
+    ["comment_count"]=>
+    array(2) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(16) "sioc:num_replies"
+      }
+      ["datatype"]=>
+      string(11) "xsd:integer"
+    }
+    ["last_activity"]=>
+    array(3) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(23) "sioc:last_activity_date"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+  }
+  ["cid"]=>
+  string(1) "0"
+  ["last_comment_timestamp"]=>
+  string(10) "1417620054"
+  ["last_comment_name"]=>
+  NULL
+  ["last_comment_uid"]=>
+  string(1) "1"
+  ["comment_count"]=>
+  string(1) "0"
+  ["name"]=>
+  string(5) "admin"
+  ["picture"]=>
+  string(1) "0"
+  ["data"]=>
+  string(207) "a:7:{s:16:"ckeditor_default";s:1:"t";s:20:"ckeditor_show_toggle";s:1:"t";s:14:"ckeditor_width";s:4:"100%";s:13:"ckeditor_lang";s:2:"en";s:18:"ckeditor_auto_lang";s:1:"t";s:7:"contact";i:0;s:7:"overlay";i:1;}"
+}
+ 5:{title:Турбаза в Сочи,lat:Array,lon:Array}, object(stdClass)#125 (40) {
+  ["vid"]=>
+  string(1) "6"
+  ["uid"]=>
+  string(1) "4"
+  ["title"]=>
+  string(39) "Гостевой дом в Адлере"
+  ["log"]=>
+  string(0) ""
+  ["status"]=>
+  string(1) "1"
+  ["comment"]=>
+  string(1) "1"
+  ["promote"]=>
+  string(1) "0"
+  ["sticky"]=>
+  string(1) "0"
+  ["nid"]=>
+  string(1) "6"
+  ["type"]=>
+  string(2) "ad"
+  ["language"]=>
+  string(2) "ru"
+  ["created"]=>
+  string(10) "1417624397"
+  ["changed"]=>
+  string(10) "1417748121"
+  ["tnid"]=>
+  string(1) "6"
+  ["translate"]=>
+  string(1) "0"
+  ["revision_timestamp"]=>
+  string(10) "1417748121"
+  ["revision_uid"]=>
+  string(1) "1"
+  ["body"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(5) {
+        ["value"]=>
+        string(31) "<p>Трям-пам-пам</p>
+"
+        ["summary"]=>
+        string(0) ""
+        ["format"]=>
+        string(13) "filtered_html"
+        ["safe_value"]=>
+        string(30) "<p>Трям-пам-пам</p>
+"
+        ["safe_summary"]=>
+        string(0) ""
+      }
+    }
+  }
+  ["field_image"]=>
+  array(1) {
+    ["und"]=>
+    array(3) {
+      [0]=>
+      array(13) {
+        ["fid"]=>
+        string(1) "4"
+        ["uid"]=>
+        string(1) "1"
+        ["filename"]=>
+        string(19) "apple_cinema_30.jpg"
+        ["uri"]=>
+        string(28) "public://apple_cinema_30.jpg"
+        ["filemime"]=>
+        string(10) "image/jpeg"
+        ["filesize"]=>
+        string(5) "66075"
+        ["status"]=>
+        string(1) "1"
+        ["timestamp"]=>
+        string(10) "1417624397"
+        ["rdf_mapping"]=>
+        array(0) {
+        }
+        ["alt"]=>
+        string(0) ""
+        ["title"]=>
+        string(0) ""
+        ["width"]=>
+        string(3) "800"
+        ["height"]=>
+        string(3) "633"
+      }
+      [1]=>
+      array(13) {
+        ["fid"]=>
+        string(1) "6"
+        ["uid"]=>
+        string(1) "1"
+        ["filename"]=>
+        string(14) "apple_logo.jpg"
+        ["uri"]=>
+        string(23) "public://apple_logo.jpg"
+        ["filemime"]=>
+        string(10) "image/jpeg"
+        ["filesize"]=>
+        string(5) "22074"
+        ["status"]=>
+        string(1) "1"
+        ["timestamp"]=>
+        string(10) "1417748121"
+        ["rdf_mapping"]=>
+        array(0) {
+        }
+        ["alt"]=>
+        string(0) ""
+        ["title"]=>
+        string(0) ""
+        ["width"]=>
+        string(3) "320"
+        ["height"]=>
+        string(3) "320"
+      }
+      [2]=>
+      array(13) {
+        ["fid"]=>
+        string(1) "7"
+        ["uid"]=>
+        string(1) "1"
+        ["filename"]=>
+        string(8) "hp_3.jpg"
+        ["uri"]=>
+        string(17) "public://hp_3.jpg"
+        ["filemime"]=>
+        string(10) "image/jpeg"
+        ["filesize"]=>
+        string(5) "18292"
+        ["status"]=>
+        string(1) "1"
+        ["timestamp"]=>
+        string(10) "1417748121"
+        ["rdf_mapping"]=>
+        array(0) {
+        }
+        ["alt"]=>
+        string(0) ""
+        ["title"]=>
+        string(0) ""
+        ["width"]=>
+        string(3) "500"
+        ["height"]=>
+        string(3) "388"
+      }
+    }
+  }
+  ["field_place"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(1) "3"
+      }
+    }
+  }
+  ["field_lodging"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "12"
+      }
+    }
+  }
+  ["field_accommodation"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "18"
+      }
+    }
+  }
+  ["field_meals"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "14"
+      }
+    }
+  }
+  ["field_swimming"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(1) "0"
+      }
+    }
+  }
+  ["field_parking"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(1) "1"
+      }
+    }
+  }
+  ["field_address"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(3) {
+        ["value"]=>
+        string(15) "Ленина, 1"
+        ["format"]=>
+        NULL
+        ["safe_value"]=>
+        string(15) "Ленина, 1"
+      }
+    }
+  }
+  ["field_phone"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(3) {
+        ["value"]=>
+        string(18) "+7 (123) 456-78-93"
+        ["format"]=>
+        NULL
+        ["safe_value"]=>
+        string(18) "+7 (123) 456-78-93"
+      }
+    }
+  }
+  ["field_distanse_sea"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(4) "1200"
+      }
+    }
+  }
+  ["field_price"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(7) "3500.00"
+      }
+    }
+  }
+  ["field_latitude"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(9) "43.425200"
+      }
+    }
+  }
+  ["field_longitude"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(9) "39.925600"
+      }
+    }
+  }
+  ["rdf_mapping"]=>
+  array(9) {
+    ["rdftype"]=>
+    array(2) {
+      [0]=>
+      string(9) "sioc:Item"
+      [1]=>
+      string(13) "foaf:Document"
+    }
+    ["title"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(8) "dc:title"
+      }
+    }
+    ["created"]=>
+    array(3) {
+      ["predicates"]=>
+      array(2) {
+        [0]=>
+        string(7) "dc:date"
+        [1]=>
+        string(10) "dc:created"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+    ["changed"]=>
+    array(3) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(11) "dc:modified"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+    ["body"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(15) "content:encoded"
+      }
+    }
+    ["uid"]=>
+    array(2) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(16) "sioc:has_creator"
+      }
+      ["type"]=>
+      string(3) "rel"
+    }
+    ["name"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(9) "foaf:name"
+      }
+    }
+    ["comment_count"]=>
+    array(2) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(16) "sioc:num_replies"
+      }
+      ["datatype"]=>
+      string(11) "xsd:integer"
+    }
+    ["last_activity"]=>
+    array(3) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(23) "sioc:last_activity_date"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+  }
+  ["cid"]=>
+  string(1) "0"
+  ["last_comment_timestamp"]=>
+  string(10) "1417624397"
+  ["last_comment_name"]=>
+  NULL
+  ["last_comment_uid"]=>
+  string(1) "4"
+  ["comment_count"]=>
+  string(1) "0"
+  ["name"]=>
+  string(14) "Евгении"
+  ["picture"]=>
+  string(1) "0"
+  ["data"]=>
+  string(189) "a:6:{s:7:"contact";i:1;s:16:"ckeditor_default";s:1:"t";s:20:"ckeditor_show_toggle";s:1:"t";s:14:"ckeditor_width";s:4:"100%";s:13:"ckeditor_lang";s:2:"en";s:18:"ckeditor_auto_lang";s:1:"t";}"
+}
+ 6:{title:Гостевой дом в Адлере,lat:Array,lon:Array}, object(stdClass)#126 (40) {
+  ["vid"]=>
+  string(1) "7"
+  ["uid"]=>
+  string(1) "1"
+  ["title"]=>
+  string(20) "Guest house in Adler"
+  ["log"]=>
+  string(0) ""
+  ["status"]=>
+  string(1) "1"
+  ["comment"]=>
+  string(1) "1"
+  ["promote"]=>
+  string(1) "0"
+  ["sticky"]=>
+  string(1) "0"
+  ["nid"]=>
+  string(1) "7"
+  ["type"]=>
+  string(2) "ad"
+  ["language"]=>
+  string(2) "en"
+  ["created"]=>
+  string(10) "1417757521"
+  ["changed"]=>
+  string(10) "1417757620"
+  ["tnid"]=>
+  string(1) "6"
+  ["translate"]=>
+  string(1) "0"
+  ["revision_timestamp"]=>
+  string(10) "1417757620"
+  ["revision_uid"]=>
+  string(1) "1"
+  ["body"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(5) {
+        ["value"]=>
+        string(22) "<p>Tryam-pam-pam</p>
+"
+        ["summary"]=>
+        string(0) ""
+        ["format"]=>
+        string(13) "filtered_html"
+        ["safe_value"]=>
+        string(21) "<p>Tryam-pam-pam</p>
+"
+        ["safe_summary"]=>
+        string(0) ""
+      }
+    }
+  }
+  ["field_image"]=>
+  array(1) {
+    ["und"]=>
+    array(3) {
+      [0]=>
+      array(13) {
+        ["fid"]=>
+        string(1) "4"
+        ["uid"]=>
+        string(1) "1"
+        ["filename"]=>
+        string(19) "apple_cinema_30.jpg"
+        ["uri"]=>
+        string(28) "public://apple_cinema_30.jpg"
+        ["filemime"]=>
+        string(10) "image/jpeg"
+        ["filesize"]=>
+        string(5) "66075"
+        ["status"]=>
+        string(1) "1"
+        ["timestamp"]=>
+        string(10) "1417624397"
+        ["rdf_mapping"]=>
+        array(0) {
+        }
+        ["alt"]=>
+        string(0) ""
+        ["title"]=>
+        string(0) ""
+        ["width"]=>
+        string(3) "800"
+        ["height"]=>
+        string(3) "633"
+      }
+      [1]=>
+      array(13) {
+        ["fid"]=>
+        string(1) "6"
+        ["uid"]=>
+        string(1) "1"
+        ["filename"]=>
+        string(14) "apple_logo.jpg"
+        ["uri"]=>
+        string(23) "public://apple_logo.jpg"
+        ["filemime"]=>
+        string(10) "image/jpeg"
+        ["filesize"]=>
+        string(5) "22074"
+        ["status"]=>
+        string(1) "1"
+        ["timestamp"]=>
+        string(10) "1417748121"
+        ["rdf_mapping"]=>
+        array(0) {
+        }
+        ["alt"]=>
+        string(0) ""
+        ["title"]=>
+        string(0) ""
+        ["width"]=>
+        string(3) "320"
+        ["height"]=>
+        string(3) "320"
+      }
+      [2]=>
+      array(13) {
+        ["fid"]=>
+        string(1) "7"
+        ["uid"]=>
+        string(1) "1"
+        ["filename"]=>
+        string(8) "hp_3.jpg"
+        ["uri"]=>
+        string(17) "public://hp_3.jpg"
+        ["filemime"]=>
+        string(10) "image/jpeg"
+        ["filesize"]=>
+        string(5) "18292"
+        ["status"]=>
+        string(1) "1"
+        ["timestamp"]=>
+        string(10) "1417748121"
+        ["rdf_mapping"]=>
+        array(0) {
+        }
+        ["alt"]=>
+        string(0) ""
+        ["title"]=>
+        string(0) ""
+        ["width"]=>
+        string(3) "500"
+        ["height"]=>
+        string(3) "388"
+      }
+    }
+  }
+  ["field_place"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(1) "3"
+      }
+    }
+  }
+  ["field_lodging"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "12"
+      }
+    }
+  }
+  ["field_accommodation"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "18"
+      }
+    }
+  }
+  ["field_meals"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["tid"]=>
+        string(2) "14"
+      }
+    }
+  }
+  ["field_swimming"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(1) "0"
+      }
+    }
+  }
+  ["field_parking"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(1) "1"
+      }
+    }
+  }
+  ["field_address"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(3) {
+        ["value"]=>
+        string(15) "Ленина, 1"
+        ["format"]=>
+        NULL
+        ["safe_value"]=>
+        string(15) "Ленина, 1"
+      }
+    }
+  }
+  ["field_phone"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(3) {
+        ["value"]=>
+        string(18) "+7 (123) 456-78-93"
+        ["format"]=>
+        NULL
+        ["safe_value"]=>
+        string(18) "+7 (123) 456-78-93"
+      }
+    }
+  }
+  ["field_distanse_sea"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(4) "1200"
+      }
+    }
+  }
+  ["field_price"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(7) "3500.00"
+      }
+    }
+  }
+  ["field_latitude"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(9) "43.425200"
+      }
+    }
+  }
+  ["field_longitude"]=>
+  array(1) {
+    ["und"]=>
+    array(1) {
+      [0]=>
+      array(1) {
+        ["value"]=>
+        string(9) "39.925600"
+      }
+    }
+  }
+  ["rdf_mapping"]=>
+  array(9) {
+    ["rdftype"]=>
+    array(2) {
+      [0]=>
+      string(9) "sioc:Item"
+      [1]=>
+      string(13) "foaf:Document"
+    }
+    ["title"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(8) "dc:title"
+      }
+    }
+    ["created"]=>
+    array(3) {
+      ["predicates"]=>
+      array(2) {
+        [0]=>
+        string(7) "dc:date"
+        [1]=>
+        string(10) "dc:created"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+    ["changed"]=>
+    array(3) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(11) "dc:modified"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+    ["body"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(15) "content:encoded"
+      }
+    }
+    ["uid"]=>
+    array(2) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(16) "sioc:has_creator"
+      }
+      ["type"]=>
+      string(3) "rel"
+    }
+    ["name"]=>
+    array(1) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(9) "foaf:name"
+      }
+    }
+    ["comment_count"]=>
+    array(2) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(16) "sioc:num_replies"
+      }
+      ["datatype"]=>
+      string(11) "xsd:integer"
+    }
+    ["last_activity"]=>
+    array(3) {
+      ["predicates"]=>
+      array(1) {
+        [0]=>
+        string(23) "sioc:last_activity_date"
+      }
+      ["datatype"]=>
+      string(12) "xsd:dateTime"
+      ["callback"]=>
+      string(12) "date_iso8601"
+    }
+  }
+  ["cid"]=>
+  string(1) "0"
+  ["last_comment_timestamp"]=>
+  string(10) "1417757521"
+  ["last_comment_name"]=>
+  NULL
+  ["last_comment_uid"]=>
+  string(1) "1"
+  ["comment_count"]=>
+  string(1) "0"
+  ["name"]=>
+  string(5) "admin"
+  ["picture"]=>
+  string(1) "0"
+  ["data"]=>
+  string(207) "a:7:{s:16:"ckeditor_default";s:1:"t";s:20:"ckeditor_show_toggle";s:1:"t";s:14:"ckeditor_width";s:4:"100%";s:13:"ckeditor_lang";s:2:"en";s:18:"ckeditor_auto_lang";s:1:"t";s:7:"contact";i:0;s:7:"overlay";i:1;}"
+}
+ 7:{title:Guest house in Adler,lat:Array,lon:Array}
